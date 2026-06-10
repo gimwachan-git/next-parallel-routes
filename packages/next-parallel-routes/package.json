@@ -1,6 +1,6 @@
 {
   "name": "next-parallel-routes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Drop-in next.config plugin: dedupes generateStaticParams across parallel-route page.tsx siblings to avoid the cartesian-product explosion in next.js 16.x.",
   "keywords": [
     "next",
