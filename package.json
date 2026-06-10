@@ -1,6 +1,6 @@
 {
   "name": "next-parallel-routes-monorepo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Monorepo for next-parallel-routes (publishable package + runnable examples).",
   "scripts": {
