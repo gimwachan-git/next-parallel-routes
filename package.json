@@ -1,0 +1,25 @@
+{
+  "name": "next-parallel-routes-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Monorepo for next-parallel-routes (publishable package + runnable examples).",
+  "scripts": {
+    "test": "pnpm --filter next-parallel-routes test:unit",
+    "test:unit": "pnpm --filter next-parallel-routes test:unit",
+    "check-type": "pnpm --filter next-parallel-routes check-type",
+    "build:examples": "pnpm --filter \"./examples/*\" build",
+    "build:example:basic": "pnpm --filter next-parallel-routes-example-basic build",
+    "build:example:auto-shim": "pnpm --filter next-parallel-routes-example-auto-shim build",
+    "version:patch": "pnpm --filter next-parallel-routes exec npm version patch --no-git-tag-version",
+    "version:minor": "pnpm --filter next-parallel-routes exec npm version minor --no-git-tag-version",
+    "version:major": "pnpm --filter next-parallel-routes exec npm version major --no-git-tag-version",
+    "release:dry": "pnpm --filter next-parallel-routes publish --dry-run --no-git-checks",
+    "release": "pnpm --filter next-parallel-routes publish --access public",
+    "release:patch": "pnpm version:patch && pnpm --filter next-parallel-routes publish --access public --no-git-checks",
+    "release:minor": "pnpm version:minor && pnpm --filter next-parallel-routes publish --access public --no-git-checks",
+    "release:major": "pnpm version:major && pnpm --filter next-parallel-routes publish --access public --no-git-checks"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

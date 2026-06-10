@@ -1,0 +1,11 @@
+node_modules/
+.turbo/
+*.log
+.DS_Store
+coverage/
+*.tgz
+
+# Next.js example build output
+.next/
+out/
+next-env.d.ts
